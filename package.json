@@ -1,0 +1,16 @@
+{
+  "name": "webpack-5",
+  "version": "1.0.0",
+  "description": "Learn",
+  "main": "yes",
+  "repository": "https://github.com/kvinay91/webpack-5.git",
+  "author": "Vinay Kumar <kvinay1191@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
