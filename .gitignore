@@ -1,0 +1,4 @@
+// added node modules
+node_modules
+// ignore the yarn.lock file
+yarn.lock
