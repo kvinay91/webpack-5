@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.css|scss$/,
         use: [
           {
             loader: "style-loader",
@@ -26,7 +26,24 @@ module.exports = {
           {
             loader: "css-loader",
           },
+          {
+            loader: "sass-loader",
+          },
         ],
+      },
+      {
+        text: /\.(js)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+            plugins: [
+              "@babel/plugin-transform-runtime",
+              "@babel/plugin-proposal-class-properties",
+            ],
+          },
+        },
       },
     ],
   },
